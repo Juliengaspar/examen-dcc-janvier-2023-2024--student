@@ -10,39 +10,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="icon.png">
     <meta name="theme-color" content="#fafafa">
+    <script defer type="module" src="./src/js/main.js"></script>
 </head>
 
 <body>
 
-<h1 class="visuallyhidden">Monster Game</h1>
-<div class="player-container">
-    <section class="player-container__player">
-        <p class="player-container__player__avatar">👨‍💻</p>
-        <h2 id="player-name" class="player-container__player__header">Vous</h2>
-        <label for="you-progress">100% de vie restante</label>
-        <progress id="you-progress" max="100" value="100"></progress>
-    </section>
-    <section class="player-container__player">
-        <p class="player-container__player__avatar">👹</p>
-        <h2 class="player-container__player__header">Le monster</h2>
-        <label for="monster-progress">100% de vie restante</label>
-        <progress id="monster-progress" max="100" value="100"></progress>
-    </section>
-</div>
-<form id="play-game" action="#" method="get">
-    <label for="name">Votre prénom : </label>
-    <input placeholder="John" type="text" name="name" id="name" data-1p-ignore>
-    <button type="submit">Commencer le jeu</button>
-</form>
-<div class="controls visuallyhidden">
-    <button class="controls__btn" data-name="attack" id="attack">Attaquer 🏹</button>
-    <button class="controls__btn" data-name="special_attack" id="special-attack">Attaque spéciale 🛸</button>
-    <button class="controls__btn" data-name="heal" id="health">Soigner 💉 0/20</button>
-    <button class="controls__btn" data-name="give-up" id="give-up">Abandonner ⚰️</button>
-</div>
+    <h1 class="visuallyhidden">Monster Game</h1>
+    <div class="player-container">
+        <section class="player-container__player">
+            <p class="player-container__player__avatar">👨‍💻</p>
+            <h2 id="player-name" class="player-container__player__header">Vous</h2>
+            <label for="you-progress">100% de vie restante</label>
+            <progress id="you-progress" max="100" value="100"></progress>
+        </section>
+        <section class="player-container__player">
+            <p class="player-container__player__avatar">👹</p>
+            <h2 class="player-container__player__header">Le monster</h2>
+            <label for="monster-progress">100% de vie restante</label>
+            <progress id="monster-progress" max="100" value="100"></progress>
+        </section>
+    </div>
+    <form id="play-game" action="#" method="get">
+        <label for="name">Votre prénom : </label>
+        <input placeholder="John" type="text" name="name" id="name" data-1p-ignore>
+        <button type="submit">Commencer le jeu</button>
+    </form>
+    <div class="controls visuallyhidden">
+        <button class="controls__btn" data-name="attack" id="attack">Attaquer 🏹</button>
+        <button class="controls__btn" data-name="special_attack" id="special-attack">Attaque spéciale 🛸</button>
+        <button class="controls__btn" data-name="heal" id="health">Soigner 💉 0/20</button>
+        <button class="controls__btn" data-name="give-up" id="give-up">Abandonner ⚰️</button>
+    </div>
 
-<ul class="log"></ul>
-
-<script type="module" src="./src/js/main.js"></script>
+    <ul class="log"></ul>
 </body>
 </html>
