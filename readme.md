@@ -24,7 +24,7 @@
 
     1. Mettez à jour le nom du premier joueur dans le tableau (`players[0].name`) en utilisant la valeur de l'input. Par exemple : `event.currentTarget.querySelector('input').value`. 👌
 
-    2. Mettez à jour le contenu textuel de la carte du premier joueur avec l'identifiant `#player-name` (cf. `strings.playerNameId`).
+    2. Mettez à jour le contenu textuel de la carte du premier joueur avec l'identifiant `#player-name` (cf. `settings.playerNameId`).
 
     3. Faites disparaître le formulaire en lui ajoutant la classe `visuallyhidden`.
 
